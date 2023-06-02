@@ -7,8 +7,6 @@ metadata:
   name: ocsinit
   namespace: openshift-storage
   annotations:
-    argocd.argoproj.io/sync-wave: "5"
-    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   enableCephTools: true
 {{- end }}
