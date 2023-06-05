@@ -9,4 +9,5 @@ resources:
 - odf-subscription.yaml
 - odf-storage-cluster.yaml
 - rook-ceph-operator-cm.yaml
+- rolebinding.yaml
 - ceph_tools.yaml
