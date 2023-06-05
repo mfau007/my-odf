@@ -1,9 +1,13 @@
 apiVersion: v1
 data:
   CSI_PLUGIN_TOLERATIONS: |
-    - key: node-role.kubernetes.io/infra
+    - key: nodetype	    - key: node-role.kubernetes.io/infra
+      operator: Equal	      operator: Equal
+      value: infra	      value: ""
+      effect: NoSchedule	      effect: NoSchedule
+    - key: node.ocs.openshift.io/storage
       operator: Equal
-      value: ""
+      value: "true"
       effect: NoSchedule
 kind: ConfigMap
 metadata:
