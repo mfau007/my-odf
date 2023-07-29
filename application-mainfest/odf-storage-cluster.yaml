@@ -31,10 +31,10 @@ spec:
         resources:
           requests:
             storage: 512Gi
-        storageClassName: thin
+        storageClassName: gp3-csi
         volumeMode: Block
       status: {}
-    name: ocs-deviceset-thin
+    name: ocs-deviceset
     placement: {}
     portable: true
     preparePlacement: {}
